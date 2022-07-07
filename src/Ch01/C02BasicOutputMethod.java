@@ -89,7 +89,7 @@ public class C02BasicOutputMethod {
 		System.out.printf("  %s\n","***");
 		System.out.printf("   %c\n",'*');
 		
-		
+		System.out.println("Github Test");
 		
 	}
 
