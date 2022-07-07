@@ -88,7 +88,7 @@ public class C02BasicOutputMethod {
 		System.out.printf(" %s\n","*****");
 		System.out.printf("  %s\n","***");
 		System.out.printf("   %c\n",'*');
-
+		
 		
 		
 	}
