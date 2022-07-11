@@ -21,7 +21,7 @@ public class C04실수 {
 		// 리터럴 접미사(F)가 없는 상태에서 실수의 기본 자료형은 double (8byte)
 		// 리터럴 접미사 F : float 형 (4byte) 
 		System.out.println(123.12345678987654321F);
-
+		
 		
 	}
 
