@@ -151,26 +151,26 @@ public class C01If {
 		// 60점 이상이면 'D' 출력
 		// 60점 미만이면 'F' 출력
 		
-		Scanner sc6 = new Scanner(System.in);
-		System.out.println("평균 점수를 입력 : ");
-		int av = sc6.nextInt();
-		if(av>=90) {
-			System.out.println("A");
-		}
-		else if(av>=80) {
-			System.out.println("B");
-		}
-		else if(av>=70) {
-			System.out.println("C");
-		}
-		else if(av>=60) {
-			System.out.println("D");
-		}
-		else {
-			System.out.println("F");
-		}
+//		Scanner sc6 = new Scanner(System.in);
+//		System.out.println("평균 점수를 입력 : ");
+//		int av = sc6.nextInt();
+//		if(av>=90) {
+//			System.out.println("A");
+//		}
+//		else if(av>=80) {
+//			System.out.println("B");
+//		}
+//		else if(av>=70) {
+//			System.out.println("C");
+//		}
+//		else if(av>=60) {
+//			System.out.println("D");
+//		}
+//		else {
+//			System.out.println("F");
+//		}
 		
-		
+			
 		
 		
 		
@@ -186,26 +186,35 @@ public class C01If {
 		System.out.println("세번째 정수를 입력하세요 : ");
 		int nu3 = sc3.nextInt();
 		sc3.close();
+//		
+//		if(nu1 > nu2)
+//		{
+//			if(nu1 > nu3)
+//			{System.out.println("가장 큰 수는 "+nu1+"입니다.");}
+//		}
+//		if(nu2 > nu1)
+//		{
+//			if(nu2>nu3)
+//			{System.out.println("가장 큰 수는 "+nu2+"입니다.");}
+//		}
+//		if(nu3>nu1)
+//		{
+//			if(nu3>nu2)
+//			{System.out.println("가장 큰 수는 "+nu3+"입니다.");}
+//			
+//		}
 		
-		if(nu1 > nu2)
-		{
-			if(nu1 > nu3)
-			{System.out.println("가장 큰 수는 "+nu1+"입니다.");}
+		if (nu1>=nu2 && nu1>=nu3) {
+			System.out.println("큰 수 : "+nu1);
 		}
-		if(nu2 > nu1)
-		{
-			if(nu2>nu3)
-			{System.out.println("가장 큰 수는 "+nu2+"입니다.");}
+		else if(nu2>=nu1 && nu2>=nu3) {
+			System.out.println("큰 수 : "+nu2);
 		}
-		if(nu3>nu1)
-		{
-			if(nu3>nu2)
-			{System.out.println("가장 큰 수는 "+nu3+"입니다.");}
-			
+		else {
+			System.out.println("큰 수 : "+nu3);
 		}
 			
 			
-			
-		}
+	}
 
 }
