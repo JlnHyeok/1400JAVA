@@ -87,19 +87,22 @@ public class C02WhileWhile {
 		// *****
 		//*******
 		
-		int i = 1;
-		while(i<=4) {
-			int j=1;
-			while(i<=3) {
-				System.out.print("");
-				i++;
+		int i=4;
+		int j=1;
+		while(i>0) {			
+			int k=1;
+			while(k<i) {
+				System.out.print(" ");
+				k++;
 			}
-			while(j<=2*i-1) {
+			k=1;
+			while(k<=2*j-1) {
 				System.out.print("*");
-				j++;
+				k++;
 			}
 			System.out.println();
-			i++;
+			i--;
+			j++;
 		}
 		
 		
