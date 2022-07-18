@@ -87,23 +87,99 @@ public class C02WhileWhile {
 		// *****
 		//*******
 		
-		int i=4;
-		int j=1;
-		while(i>0) {			
-			int k=1;
-			while(k<i) {
-				System.out.print(" ");
-				k++;
+//		int i=4;
+//		int j=1;
+//		while(i>0) {			
+//			int k=1;
+//			while(k<i) {
+//				System.out.print(" ");
+//				k++;
+//			}
+//			k=1;
+//			while(k<=2*j-1) {
+//				System.out.print("*");
+//				k++;
+//			}
+//			System.out.println();
+//			i--;
+//			j++;
+//		}
+		
+		// 문제 5
+		//*******
+		// *****
+		//  ***
+		//   *
+		
+//		int i=1;
+//		int j=4;
+//		while(i<=4) {			
+//			int k=1;
+//			while(k<i) {
+//				System.out.print(" ");
+//				k++;
+//			}
+//			k=1;
+//			while(k<=2*j-1) {
+//				System.out.print("*");
+//				k++;
+//			}
+//			System.out.println();
+//			i++;
+//			j--;
+//		}
+		
+		// 문제 6
+		//   *
+		//  ***
+		// *****
+		//*******
+		// *****
+		//  ***
+		//   *
+		
+		
+		int i = 1;
+		int j = 1;
+		int k = 1;
+		while (i <= 7) {
+			while (i <= 4) {
+				k = 1;
+				while (k <= 4 - i) {
+					System.out.print(" ");
+					k++;
+				}
+				j = 1;
+				while (j <= i * 2 - 1) {
+					System.out.print("*");
+					j++;
+				}
+				System.out.println(" ");
+				i++;
 			}
-			k=1;
-			while(k<=2*j-1) {
-				System.out.print("*");
-				k++;
+			while (i > 4) {
+				k = 1;
+				while (k <= i - 4) {
+					System.out.print(" ");
+					k++;
+				}
+				j = 1;
+				while (j <= 7 - 2 * (i - 4)) {
+					System.out.print("*");
+					j++;
+				}
+				System.out.println(" ");
+				i++;
+				if (i == 8) {
+					break;
+				}
 			}
-			System.out.println();
-			i--;
-			j++;
 		}
+		
+		
+		
+		
+		
 		
 		
 		
