@@ -1,5 +1,9 @@
 package Ch09ClassBasic;
 
+import java.util.Scanner;
+
+import javax.annotation.processing.RoundEnvironment;
+
 public class C01ClassInfo {
 
 	public static void main(String[] args) {
@@ -31,14 +35,29 @@ public class C01ClassInfo {
 		
 		
 		// 3 클래스
-		//	-> 객체에 필요한 공간생성과 기능을 제공하기 위해 미리 선언된 자료형
-		//	-> 
+		//	-> 객체에 필요한 공간생성과 기능을 제공하기 위해 미리 선언된 자료형		
+		
+		// 4 자바의 메모리 영역
+		//	-> 1) 스택 영역	: 메서드 내에서 생성되는 공간(일반 자료형 int,double, 참조변수,,)
+		//	-> 2) 힙 영역		: 객체가 저장되는 영역(동적할당 공간)
+		//	-> 3) 클래스 영역	: 공유메모리 영역(일반 메서드, static메서드, 생성자 함수, static변수)
+		
+		// 5 단순코드로 확인
+		Scanner sc = new Scanner(System.in);
+		
+//		Scanner = 클래스 자료형
+//		Sc = 참조 변수
+//		new = 동적할당(힙영역에 공간할당)	
+//		Scanner() = 생성자 메서드	- 객체생성시 한번만 호출되는 메서드
+//								- 객체에 공간생성에 관여, 초기값을 부여(기본값 =0)
+
 		
 		
 		
-		// 5 자바의 메모리 영역
 		
-		// 6 단순코드로 확인
+		
+		
+		
 		
 		
 		

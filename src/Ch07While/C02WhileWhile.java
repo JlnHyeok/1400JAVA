@@ -139,13 +139,56 @@ public class C02WhileWhile {
 		//   *
 		
 		
+//		int i = 1;
+//		int j = 1;
+//		int k = 1;
+//		while (i <= 7) {
+//			while (i <= 4) {
+//				k = 1;
+//				while (k <= 4 - i) {
+//					System.out.print(" ");
+//					k++;
+//				}
+//				j = 1;
+//				while (j <= i * 2 - 1) {
+//					System.out.print("*");
+//					j++;
+//				}
+//				System.out.println(" ");
+//				i++;
+//			}
+//			while (i > 4) {
+//				k = 1;
+//				while (k <= i - 4) {
+//					System.out.print(" ");
+//					k++;
+//				}
+//				j = 1;
+//				while (j <= 7 - 2 * (i - 4)) {
+//					System.out.print("*");
+//					j++;
+//				}
+//				System.out.println(" ");
+//				i++;
+//				if (i == 8) {
+//					break;
+//				}
+//			}
+//		}
+		
+		// 층을 입력받아 만드는 다이아몬드
+		
+		System.out.println("몇층 다이아 ? ");
+		int n = sc.nextInt();
+		if(n%2==0) {n++;}
+		
 		int i = 1;
 		int j = 1;
 		int k = 1;
-		while (i <= 7) {
-			while (i <= 4) {
+		while (i <= n) {
+			while (i <= Math.ceil((double)n/2)) {
 				k = 1;
-				while (k <= 4 - i) {
+				while (k <=  Math.ceil((double)n/2) - i) {
 					System.out.print(" ");
 					k++;
 				}
@@ -157,26 +200,24 @@ public class C02WhileWhile {
 				System.out.println(" ");
 				i++;
 			}
-			while (i > 4) {
+			while (i >  Math.ceil((double)n/2)) {
 				k = 1;
-				while (k <= i - 4) {
+				while (k <= i - Math.ceil((double)n/2)) {
 					System.out.print(" ");
 					k++;
 				}
 				j = 1;
-				while (j <= 7 - 2 * (i - 4)) {
+				while (j <= n - 2 * (i - Math.ceil((double)n/2))) {
 					System.out.print("*");
 					j++;
 				}
 				System.out.println(" ");
 				i++;
-				if (i == 8) {
+				if (i == n+1) {
 					break;
 				}
 			}
 		}
-		
-		
 		
 		
 		
