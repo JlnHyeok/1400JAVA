@@ -57,17 +57,16 @@ public class C01For {
 			n=m;
 			m=temp;
 		}
+		System.out.println(n+" "+m);
 		int count=0;
 		int sum=0;
-		for(int i = n; i<=m; i++) {
+		for(int i=n; i<=m; i++) {
 			if(i%3==0) {
-				i++;
 				continue;
 			}
 			System.out.println(i);
 			sum+=i;
 			count++;
-			i++;
 		}
 		System.out.println(n+"부터"+m+"까지 3의 배수를 제외한 값들의 합 : "+sum);
 		System.out.println(n+"부터"+m+"까지의 합의 평균 : "+(double)sum/count);
