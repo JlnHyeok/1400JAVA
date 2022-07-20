@@ -31,8 +31,7 @@ public class C07MethodTest {
 		cal.mul(5, 6);
 		cal.div(10, 2);
 		
-		
-		
+	
 	}
 
 }
