@@ -19,7 +19,7 @@ class Calculator{
 }
 
 public class C07MethodTest {
-
+	// 문제
 	public static void main(String[] args) {
 		
 		Calculator cal = new Calculator();
