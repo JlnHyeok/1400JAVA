@@ -12,11 +12,11 @@ class Rectangle{
 		System.out.printf("좌표:(%d , %d) 에서 넓이:(%d x %d)인 사각형\n",x,y,width,height);
 	}
 	boolean contains(Rectangle what) {
-		if(this.x-(double)this.width/2<=what.x-(double)what.width/2 & this.x+(double)this.width/2>=what.x+(double)what.width/2 & this.y+(double)this.height/2>=what.y+(double)what.height/2 & this.y-(double)this.height/2<=what.y-(double)what.height/2 ) 
+		// this.x<=what.x && this.x+this.width>=what.x+what.width && this.y<=what.y && this.y+this.height>=what.y+what.height
+		if(this.x-(double)this.width/2<=what.x-(double)what.width/2 && this.x+(double)this.width/2>=what.x+(double)what.width/2 && this.y+(double)this.height/2>=what.y+(double)what.height/2 && this.y-(double)this.height/2<=what.y-(double)what.height/2 ) 
 		{return true;}
 		else 
-		{return false;}
-		
+		{return false;}		
 	}
 }
 public class C15Prac {
