@@ -47,7 +47,7 @@ public class C05Prac {
 					}
 				}
 				else {
-					System.out.println("아예ㅇ다름");
+					System.out.println("아예 다름");
 				}
 			}
 		}
