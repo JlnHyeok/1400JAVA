@@ -28,7 +28,7 @@ class Refrigerator
 	private Refrigerator() {}
 	
 	
-	Product [] list = new Product[100];
+	Product [] list = new Product[100];		// -> 동적할당이 가능한 컬렉션으로 처리시 메모리 허용 범위 내에서 배열 크기 확장가능
 	
 	int ProductNum = 0;
 	
@@ -45,28 +45,43 @@ class Refrigerator
 	}
 	
 	Product getProduct(String search,int amount) {
-		for(Product thing : list) {
-			if(search.equals(thing.PName)) { // 일치하는 제품이 있다면
-				
-				if(amount>thing.amount) {
-					return null;
-				}
-				else if(amount==thing.amount) {	// 재고량 == 요청수량, ProductNum--, list에서 제품 삭제-->컬렉션 , return product
+		for(int i=0;i<ProductNum;i++) {
+			if(list[i].equals(search)) {
+				if(list[i].amount == amount) {
 					
-					return thing;
+				}
+				else if(list[i].amount > amount) {
+					list[i].amount-=amount;
+					
 				}
 				else {
-					thing.amount-=amount;
-					Product get = new Product(search,amount);	// 재고량 > 요청수량
-					return get;
+					return null;
 				}
-				
-			}
-			else {
-				System.out.println("null");
-				return null;
 			}
 		}
+//		for(Product thing : list) {
+//			if(search.equals(thing.PName)) { // 일치하는 제품이 있다면
+//				
+//				if(amount>thing.amount) {
+//					return null;
+//				}
+//				else if(amount==thing.amount) {	// 재고량 == 요청수량, ProductNum--, list에서 제품 삭제-->컬렉션 , return product
+//					Product prod = thing;
+//					
+//					return prod;
+//				}
+//				else {
+//					thing.amount-=amount;
+//					Product get = new Product(search,amount);	// 재고량 > 요청수량
+//					return get;
+//				}
+//				
+//			}
+//			else {
+//				System.out.println("null");
+//				return null;
+//			}
+//		}
 		//반복문과 문자열 검색 처리를 통해서 list에 저장된 search 
 		//객체 꺼내와서 요청 개수만큼 차감
 		//찾은 Product의 주소를 리턴
