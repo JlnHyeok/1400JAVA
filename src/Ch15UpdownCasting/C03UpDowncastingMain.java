@@ -55,7 +55,7 @@ class Notebook extends Computer{
 	}
 
 	public void move() {
-		System.out.println(this.getSN()+"노트북이 이동합니다");
+		System.out.println(this.getSN()+" 노트북이 이동합니다");
 		battery-=5;
 	}
 
